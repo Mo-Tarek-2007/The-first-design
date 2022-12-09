@@ -1,0 +1,190 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+	  <title>website 2</title>
+      <link rel="stylesheet"  type="text/css" href="style.css">
+  <style>
+  *{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "poppins", sans-serif;
+	scroll-behavior: smooth;
+	}
+body{
+	overflow-x:hidden;
+	background: linear-gradient(#2b1055,#7597de);
+	min-height: 100vh;
+	
+}
+header{
+  top : 0;
+  left: 0;
+  position:absolute;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index:10000;
+}
+header .logo{
+ color:#fff;
+ font-weight: 700;
+ font-size: 2em;
+ text-decoration: none;
+ text-transform: uppercase;
+ letter-spacing:2px;
+
+}
+header ul{
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+header ul li{
+ margin-left: 20px;
+ list-style: none;
+
+}
+header ul li a{
+text-decoration:none;
+padding: 6px 15px;
+color:#fff;
+border-radius: 20px;
+}
+header ul li a:hover,
+header ul li a.active
+{
+background: #fff;
+color: #2b1055;
+}
+section{
+position: relative;
+height: 100vh;
+width: 100%;
+padding:100px;
+display: flex;
+justify-content: center;
+align-items: center;
+overflow: hidden;
+}
+section::before{
+content: "";
+position: absolute;
+bottom: 0;
+height: 100px;
+width: 100%;
+background:linear-gradient(to top,#1c0522,transparent);
+z-index: 1000;
+}
+section img{
+position: absolute;
+top:0;
+left:0;
+height: 100%;
+width: 100%;
+object-fit: cover;
+pointer-events:none;
+}
+section img#moon{
+mix-blend-mode: screen;
+}
+section img#mountains_front
+{
+z-index:10;
+}
+#text{
+position:absolute;
+right: -350px;
+color:#fff;
+white-space: nowrap;
+font-size: 7.5vw;
+z-index:9;
+}
+#btn{
+text-decoration:none;
+display:inline-block;
+padding: 8px 30px;
+border-radius:40px;
+background:#fff;
+color: #2b1055;
+font-size:1.5em;
+z-index:9;
+transform:translateY(100px);
+
+}
+.sec{
+position:relative;
+color: #fff;
+padding:100px;
+background:#1c0522;
+}
+.sec h2{
+margin-bottom: 10px;
+font-size: 3.5em; 
+}
+.sec p{
+font-size: 1.2em; 
+}
+  </style>
+        </head>
+      <body>
+        <header>
+          <a href="#" class="logo">Moka07</a>
+          <ul>
+            
+            <li><a href="#"class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Contect</a></li>
+          </ul>
+        </header>
+		<section>
+		<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKMUvw8FJIJBBHM-EDL3tQZChzopS_VIL-kDLwnb-cxJAUPtjSg-03T0vIQZp7Y6onLyYV5O3sKODuSyR95US284mpCx806XDh1mTxbpULrQ_fmZW0YAXz5HKCYgXbKIMuKDt4nmrzOWLn31f5timzl2IzdnB86WRJVHvasqpNcXYcTfurtBXrTDQFMw/s2049/stars.png" id="stars">
+		<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisfkenXlBsuIVUTBvTuYpXjSuAut3RiIVNJufoxl1x_bC3OXCwIgirYwx19kpyr4GFNR3zLxWnUJ-2YT7f-87AUTCrdj5VRdZ3R_qsnFjLNPhtk7I99HP0_z46LcLFTufD7jWRNRL8B3N-pt3jJeSBwZr8gMNP2h5Pr1ZDpXBMxII_91F3Y4l-JeES1w/s2049/moon.png" id="moon">
+		<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWdiETpjUwTG9ESDp-KaPfknYV12IvVu5R7XH2WKmB8peMSWPONY0F3p4vkhp1KkDFiYnZO86WWASw4Y4zDJJkXKOBFqJMm7Hax9OcNpvwz1qR0Fr5al0YaPTF9JVKesNvfMjLMp0yh2L8rOPTndPFFeWVRHrlK4ZnMruXO4EiabyyHQ9YIOPE3q7aSQ/s2049/mountains_behind.png" id="mountains_behind">
+		<h2 id="text">Moon Light</h2>
+		<a  href="#sec" id="btn">Explore</a >
+		<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhVKpPKEmME6yuUa59K-3oTMfAErpAwrAPPKcXxi1XN2zQwUHJd9NOkHSs2r8nntChlNuxqs1cPfmnseH1oD9vgwyV-40TYGPkh54WR6R3uyt9HS5mo38-NVN98C9h5A8_xopOlPnJdjIK6RcjeReM9RGwp7WAoGgh2DWJgdKCVNZi-7eovKoz52pBbmw/s2049/mountains_front.png" id="mountains_front">
+		</section>
+        <div class="sec" id="sec">
+		<h2>محمد طارق</h2>
+				<br></br>
+
+		<p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.</p>
+		<br></br>
+		<p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.</p>
+		<br></br>
+		<p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.</p>
+
+        </div>
+		<script>
+let stars = document.getElementById('stars');
+let moon = document.getElementById('moon');
+let mountains_behind = document.getElementById('mountains_behind');
+let text = document.getElementById('text');
+let btn = document.getElementById('btn');
+let mountains_front = document.getElementById('mountains_front');
+let header = document.querySelector('header');
+
+window.addEventListener('scroll',function(){
+let value = window.scrollY;
+stars.style.left = value *0.25 + 'px';
+moon.style.top = value *1.05 +'px';
+mountains_behind.style.top = value *0.5 +'px';
+mountains_front.style.top = value *0  +'px';
+text.style.marginRight = value *3 +'px';
+text.style.marginTop = value *1.5 +'px';
+btn.style.marginTop = value *1.5 +'px';
+header.style.top = value *0.5 +'px';
+})
+
+		</script>	
+		</body>
+      </html>
